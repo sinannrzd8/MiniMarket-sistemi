@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 t=0
+user_balance=100.0
 
 DATA_DIR = Path('data')
 DEFAULT_USERS = [
@@ -30,11 +31,13 @@ DEFAULT_PRODUCTS = {
     ]
 }
 
+favourities = []
+sebet = []
 
 print("==========Xoş Gəlmisiniz==========")
 
 while t==0:
-    user_name='Sinan və Nicat'
+    user_name='Siccin'
     user_password=1234
     for i in range(3):
         username = input('Istifadəçi adını daxil edin : ')
@@ -48,7 +51,14 @@ while t==0:
         print("Sən getdin bloka😏 (10 saniyəlik)")
 
         time.sleep(10)
+        continue
 
+    def list_products(products, category):
+        items = products.get(category, [])
+        print('\n[Məhsul ID]   Ad                       Qiymət (AZN)')
+        for p in items:
+            print(f"[{p['id']}] {p['name']:<22} {p['price']:.2f}")
+        return items
 
     while True:
         print("\n=== Əsas menyu ===")
@@ -59,6 +69,7 @@ while t==0:
             "5) Settings (şifrəni dəyiş) \n"
             "6) Balansımı göstər \n"
             "0) Çıxış \n")
+        
         secim = int(input())
 
         if secim==0:
@@ -67,5 +78,233 @@ while t==0:
 
         if secim==1:
             print(DEFAULT_PRODUCTS)
-            category = input("Kateqoriyanı daxil et.")
+            for kat in DEFAULT_PRODUCTS:
+                print("---", kat)
+            category = input("Kateqoriyanı daxil et : ")
+            if category == "İdman":
+                items = list_products(DEFAULT_PRODUCTS, "İdman")
+                
+                product_id = int(input("Məhsul ID daxil edin: "))
+                
+                secilen = None
+                for p in items:
+                    if p["id"] == product_id:
+                        secilen = p
+                        break
 
+                if secilen is None:
+                    print("Belə məhsul yoxdur!")
+                    continue
+
+                print(f"Seçildi: {secilen['name']} - {secilen['price']} AZN")
+
+                miqdar = int(input("Miqdar daxil et: "))
+                if miqdar <= 0:
+                    print("Miqdar 0 və ya mənfi ola bilməz!")
+                    continue
+
+                print("B → Səbətə əlavə et")
+                print("F → Favoritlərə əlavə et")
+                print("X → Ləğv et")
+                sec = input("Seçim: ")
+
+                if sec.upper() == "B":
+                    sebet.append({
+                        "ad": secilen["name"],
+                        "price": secilen["price"],
+                    })
+
+            if category == "Elektronika":
+                items = list_products(DEFAULT_PRODUCTS, "Elektronika")
+                
+                product_id = int(input("Məhsul ID daxil edin: "))
+                
+                secilen = None
+                for p in items:
+                    if p["id"] == product_id:
+                        secilen = p
+                        break
+
+                if secilen is None:
+                    print("Belə məhsul yoxdur!")
+                    continue
+
+                print(f"Seçildi: {secilen['name']} - {secilen['price']} AZN")
+
+                miqdar = int(input("Miqdar daxil et: "))
+                if miqdar <= 0:
+                    print("Miqdar 0 və ya mənfi ola bilməz!")
+                    continue
+
+                print("B → Səbətə əlavə et")
+                print("F → Favoritlərə əlavə et")
+                print("X → Ləğv et")
+                sec = input("Seçim: ")
+
+                if sec.upper() == "B":
+                    sebet.append({
+                        "ad": secilen["name"],
+                        "price": secilen["price"],
+                        "qty": miqdar,
+                        "total": secilen["price"] * miqdar
+                    })
+                    print("Səbətə əlavə edildi!")
+
+                elif sec.upper() == "F":
+                    favourities.append(secilen)
+                    print("Favoritlərə əlavə edildi!")
+
+                elif sec.upper() == "X":
+                    print("Ləğv edildi.")
+                else:
+                    print("Yanlış əməliyyat!")
+
+            if category == "Geyimler":
+                items = list_products(DEFAULT_PRODUCTS, "Geyimler")
+                
+                product_id = int(input("Məhsul ID daxil edin: "))
+                
+                secilen = None
+                for p in items:
+                    if p["id"] == product_id:
+                        secilen = p
+                        break
+
+                if secilen is None:
+                    print("Belə məhsul yoxdur!")
+                    continue
+
+                print(f"Seçildi: {secilen['name']} - {secilen['price']} AZN")
+
+                miqdar = int(input("Miqdar daxil et: "))
+                if miqdar <= 0:
+                    print("Miqdar 0 və ya mənfi ola bilməz!")
+                    continue
+
+                print("B → Səbətə əlavə et")
+                print("F → Favoritlərə əlavə et")
+                print("X → Ləğv et")
+                sec = input("Seçim: ")
+
+                if sec.upper() == "B":
+                    sebet.append({
+                        "ad": secilen["name"],
+                        "price": secilen["price"],
+                        "qty": miqdar,
+                        "total": secilen["price"] * miqdar
+                    })
+                    print("Səbətə əlavə edildi!")
+
+                elif sec.upper() == "F":
+                    favourities.append(secilen)
+                    print("Favoritlərə əlavə edildi!")
+
+                elif sec.upper() == "X":
+                    print("Ləğv edildi.")
+                else:
+                    print("Yanlış əməliyyat!")
+
+        if secim == 2:
+            print("\n--- SƏBƏT ---")
+            if len(sebet) == 0:
+                print("Səbət boşdur!")
+            else:
+                for item in sebet:
+                    print(item)
+            umumi = 0
+            for item in sebet:
+                print(f"{item['ad']} | {item['price']} AZN x {item['qty']}  = {item['total']}")
+                umumi += item['total']
+
+            print(f"ÜMUMİ MƏBLƏĞ: {umumi} AZN\n")
+
+            print("1) Checkout")
+            print("2) Səbəti təmizlə")
+            print("0) Geri")
+
+            alt_secim = int(input("Seçim daxil et: "))
+
+            if alt_secim == 1:
+                if umumi <= user_balance:
+                    user_balance -= umumi
+                    print("Checkout uğurludur! Balansdan çıxıldı!")
+                    print("Yeni balans:", user_balance, "AZN")
+                    sebet.clear()
+                else:
+                    print("Balans çatmır, emeliyyat ləğv edildi!")
+
+            elif alt_secim == 2:
+                sebet.clear()
+                print("Sebet temizlendi!")
+
+            elif alt_secim == 0:
+                continue
+            else:
+                print("Yanlış emeliyyat!")
+
+        if secim == 3:
+            print("\n--- FAVORİTLƏR ---")
+
+            if len(favourities) == 0:
+                print("Favorit yoxdur!")
+                continue
+
+            say = 1
+            for item in favourities:
+                print(f"{say}) {item['name']} - {item['price']} AZN")
+                say += 1
+
+            print("\n1) Favoriti sebete elave et.")
+            print("2) Favoriti sil.")
+            print("0) Geri.")
+
+            sec = int(input("Seçim: "))
+
+            if sec == 1:
+                fav_id = int(input("Favorit ID daxil edin: "))
+
+                if fav_id < 1 or fav_id > len(favourities):
+                    print("Yanlış ID!")
+                    continue
+
+                secilen = favourities[fav_id - 1]
+
+                miq = int(input("Miqdar daxil edin: "))
+                if miq <= 0:
+                    print("Miqdar düzgün deyil!")
+                    continue
+
+                sebet.append({
+                    "ad": secilen["name"],
+                    "price": secilen["price"],
+                    "qty": miq,
+                    "total": secilen["price"] * miq
+                })
+
+                print("Sebete elave edildi!")
+
+            elif sec == 2:
+                fav_id = int(input("Silinecek ID: "))
+
+                if fav_id < 1 or fav_id > len(favourities):
+                    print("Yanlış ID!")
+                    continue
+
+                silinen = favourities.pop(fav_id - 1)
+                print(f"{silinen['name']} silindi.")
+
+            elif sec == 0:
+                continue
+            else:
+                print("Yanlış seçim!")
+
+        if secim==5:
+            newpassword = int(input("Yeni sifrenizi daxil edin"))
+            trypassword = int(input("Yeni sifrenizi tekrar daxil edin"))
+            if newpassword==trypassword:
+                password = newpassword
+                print("Sifre deyisdirildi...")
+                break
+
+        if secim==6:
+            print("Balans:", DEFAULT_USERS[0]["balance"])
