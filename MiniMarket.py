@@ -33,6 +33,7 @@ DEFAULT_PRODUCTS = {
 
 favourities = []
 sebet = []
+history = []
 
 print("==========Xoş Gəlmisiniz==========")
 
@@ -44,9 +45,11 @@ while t==0:
         password = int(input("İstifadəçi parolunu daxil edin : "))
         if user_name==username and user_password==password:
             print("Giriş Uğurludur....")
+            history.append("Giriş Uğurludur....")
             break
         else:
             print("İstifadəçi Tapılmadı!!!\n")
+            history.append("Giriş Uğursuzdur...")
     else:
         print("Sən getdin bloka😏 (10 saniyəlik)")
 
@@ -109,10 +112,22 @@ while t==0:
                 sec = input("Seçim: ")
 
                 if sec.upper() == "B":
+                    history.append(f"Səbətə əlavə olundu: {secilen['name']} x{miqdar}")
+
                     sebet.append({
                         "ad": secilen["name"],
                         "price": secilen["price"],
                     })
+                elif sec.upper() == "F":
+                    history.append(f"Favoritlərimə əlavə olundu: {secilen['name']}")
+                    favourities.append({
+                        "ad": secilen["name"],
+                        "price": secilen["price"],
+                    })
+                elif sec.upper() == "X":
+                    print("Ləğv edildi.")
+                else:
+                    print("Yanlış əməliyyat!")
 
             if category == "Elektronika":
                 items = list_products(DEFAULT_PRODUCTS, "Elektronika")
@@ -142,6 +157,7 @@ while t==0:
                 sec = input("Seçim: ")
 
                 if sec.upper() == "B":
+                    history.append(f"Səbətə əlavə olundu: {secilen['name']} x{miqdar}")
                     sebet.append({
                         "ad": secilen["name"],
                         "price": secilen["price"],
@@ -151,6 +167,7 @@ while t==0:
                     print("Səbətə əlavə edildi!")
 
                 elif sec.upper() == "F":
+                    history.append(f"Favoritlərimə əlavə olundu: {secilen['name']}")
                     favourities.append(secilen)
                     print("Favoritlərə əlavə edildi!")
 
@@ -187,6 +204,7 @@ while t==0:
                 sec = input("Seçim: ")
 
                 if sec.upper() == "B":
+                    history.append(f"Səbətə əlavə olundu: {secilen['name']} x{miqdar}")
                     sebet.append({
                         "ad": secilen["name"],
                         "price": secilen["price"],
@@ -196,6 +214,7 @@ while t==0:
                     print("Səbətə əlavə edildi!")
 
                 elif sec.upper() == "F":
+                    history.append(f"Favoritlərimə əlavə olundu: {secilen['name']}")
                     favourities.append(secilen)
                     print("Favoritlərə əlavə edildi!")
 
@@ -227,10 +246,12 @@ while t==0:
             if alt_secim == 1:
                 if umumi <= user_balance:
                     user_balance -= umumi
+                    history.append(f"Checkout uğurludur. {umumi} AZN")
                     print("Checkout uğurludur! Balansdan çıxıldı!")
                     print("Yeni balans:", user_balance, "AZN")
                     sebet.clear()
                 else:
+                    history.append(f"Checkout uğursuzdur. Balans: {umumi} AZN")
                     print("Balans çatmır, emeliyyat ləğv edildi!")
 
             elif alt_secim == 2:
@@ -297,6 +318,15 @@ while t==0:
                 continue
             else:
                 print("Yanlış seçim!")
+
+        if secim == 4:
+            print("\n--- TARİXÇƏ ---")
+            
+            if len(history) == 0:
+                print("Tarixçə boşdur!")
+            else:
+                for procces in history:
+                    print(procces)
 
         if secim==5:
             newpassword = int(input("Yeni sifrenizi daxil edin"))
