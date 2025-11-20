@@ -117,6 +117,8 @@ while t==0:
                     sebet.append({
                         "ad": secilen["name"],
                         "price": secilen["price"],
+                        "qty": miqdar,
+                        "total": secilen["price"] * miqdar
                     })
                 elif sec.upper() == "F":
                     history.append(f"Favoritlərimə əlavə olundu: {secilen['name']}")
