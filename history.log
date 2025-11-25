@@ -105,3 +105,9 @@
 2025-25-11 06:54:45 INFO User_ID (3) : Successful database saving.
 2025-25-11 06:54:51 INFO User_ID (3) : Successful database saving.
 2025-25-11 06:55:04 INFO User_ID (3) : Successful database saving.
+2025-25-11 10:19:02 INFO User_ID (1) : Successfull log in.
+2025-25-11 10:19:03 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:19:56 INFO User_ID (1) : Product added to basket.
+2025-25-11 10:20:01 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:20:18 INFO Failed checkout.
+2025-25-11 10:20:42 INFO User_ID (1) : Successful database saving.

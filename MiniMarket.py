@@ -6,7 +6,7 @@ import logging
 enter_key = False
 t=0
 
-logging.basicConfig(level=logging.DEBUG,format="%(asctime)s %(levelname)s %(message)s", datefmt = "%Y-%d-%m %H:%M:%S",filename = "history.log",ensure_ascii = False)
+logging.basicConfig(level=logging.DEBUG,format="%(asctime)s %(levelname)s %(message)s", datefmt = "%Y-%d-%m %H:%M:%S",filename = "history.log")
 
 def list_products(products, cathegory):
     items = products[cathegory]["products"]
