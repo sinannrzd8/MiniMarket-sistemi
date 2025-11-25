@@ -1,0 +1,32 @@
+{
+"1" :{"name" : "Geyimlər" ,
+	"products": [
+        {"id": 1, "name": "T-Shirt", "price": 12},
+        {"id": 2, "name": "Hoodie", "price": 45},
+        {"id": 3, "name": "Jeans",  "price": 60}
+		]
+	},    
+"2" :{"name" : "İdman",
+	"products" : [
+        {"id": 1, "name": "Ball", "price": 7},
+        {"id": 2, "name": "Dumbbell", "price": 16},
+        {"id": 3, "name": "Boxing Pole", "price": 30}
+		]
+	},
+"3" :{"name" : "Elektronika",
+	"products" : [
+        {"id": 1, "name": "Mouse", "price": 6},
+        {"id": 2, "name": "Mouse Pad", "price": 11},
+        {"id": 3, "name": "Keyboard", "price": 44},
+		{"id": 4, "name": "Powerbank", "price": 24}
+		]
+	},
+"4" :{"name" : "Aksesuarlar",
+	"products" : [
+        {"id": 1, "name": "Saat", "price": 70},
+        {"id": 2, "name": "Pul qabı", "price": 24},
+        {"id": 3, "name": "Kəmər", "price": 9},
+		{"id": 4, "name": "Eynək", "price": 24}
+		]
+	}
+}

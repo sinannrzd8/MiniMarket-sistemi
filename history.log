@@ -1,0 +1,107 @@
+2025-25-11 06:21:03 INFO Wrong log in informations. Failed log in.
+2025-25-11 06:21:06 INFO Successfull log in.
+2025-25-11 06:21:06 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:29:48 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:29:49 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:33:13 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:33:13 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:34:20 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:34:21 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:35:29 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:35:29 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:35:51 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:35:51 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:36:37 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:36:37 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:37:25 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:37:25 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:37:46 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:37:46 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:38:09 DEBUG diff parser start
+2025-25-11 06:38:09 DEBUG line_lengths old: 186; new: 290
+2025-25-11 06:38:09 DEBUG -> code[equal] old[1:8] new[1:8]
+2025-25-11 06:38:09 DEBUG copy old[1:7] new[1:7]
+2025-25-11 06:38:09 DEBUG parse_part from 8 to 9 (to 10 in part parser)
+2025-25-11 06:38:09 DEBUG -> code[replace] old[9:9] new[9:9]
+2025-25-11 06:38:09 DEBUG -> code[equal] old[10:43] new[10:43]
+2025-25-11 06:38:09 DEBUG copy old[11:40] new[10:40]
+2025-25-11 06:38:09 DEBUG parse_part from 41 to 42 (to 42 in part parser)
+2025-25-11 06:38:09 DEBUG parse_part from 43 to 54 (to 55 in part parser)
+2025-25-11 06:38:09 DEBUG -> code[replace] old[44:44] new[44:44]
+2025-25-11 06:38:09 DEBUG -> code[equal] old[45:45] new[45:45]
+2025-25-11 06:38:09 DEBUG -> code[replace] old[46:46] new[46:46]
+2025-25-11 06:38:09 DEBUG -> code[equal] old[47:78] new[47:78]
+2025-25-11 06:38:10 DEBUG parse_part from 55 to 290 (to 289 in part parser)
+2025-25-11 06:38:10 DEBUG -> code[replace] old[79:79] new[79:79]
+2025-25-11 06:38:10 DEBUG -> code[equal] old[80:157] new[80:157]
+2025-25-11 06:38:10 DEBUG -> code[replace] old[158:158] new[158:158]
+2025-25-11 06:38:10 DEBUG -> code[equal] old[159:163] new[159:163]
+2025-25-11 06:38:10 DEBUG -> code[replace] old[164:164] new[164:164]
+2025-25-11 06:38:10 DEBUG -> code[equal] old[165:185] new[165:185]
+2025-25-11 06:38:10 DEBUG -> code[replace] old[186:186] new[186:290]
+2025-25-11 06:38:10 DEBUG diff parser end
+2025-25-11 06:38:10 DEBUG diff parser start
+2025-25-11 06:38:10 DEBUG line_lengths old: 290; new: 290
+2025-25-11 06:38:10 DEBUG -> code[equal] old[1:289] new[1:289]
+2025-25-11 06:38:10 DEBUG copy old[1:54] new[1:44]
+2025-25-11 06:38:10 DEBUG parse_part from 45 to 55 (to 55 in part parser)
+2025-25-11 06:38:11 DEBUG parse_part from 56 to 290 (to 289 in part parser)
+2025-25-11 06:38:11 DEBUG -> code[replace] old[290:290] new[290:290]
+2025-25-11 06:38:11 DEBUG diff parser end
+2025-25-11 06:38:22 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:38:22 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:38:23 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:41:36 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:41:36 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:41:43 INFO Basket cleared.
+2025-25-11 06:41:45 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:45:35 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:45:36 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:45:46 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:45:50 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:47:58 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:47:58 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\builtins.pyi
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\json\__init__.py
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\json\__init__.pyi
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\typing.py
+2025-25-11 06:48:42 DEBUG pickle loaded: C:\Users\Polarbear\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\typing.pyi
+2025-25-11 06:48:43 DEBUG diff parser start
+2025-25-11 06:48:43 DEBUG line_lengths old: 133; new: 133
+2025-25-11 06:48:43 DEBUG -> code[equal] old[1:132] new[1:132]
+2025-25-11 06:48:43 DEBUG copy old[1:54] new[1:44]
+2025-25-11 06:48:43 DEBUG parse_part from 45 to 55 (to 55 in part parser)
+2025-25-11 06:48:43 DEBUG parse_part from 56 to 133 (to 132 in part parser)
+2025-25-11 06:48:43 DEBUG -> code[replace] old[133:133] new[133:133]
+2025-25-11 06:48:43 DEBUG diff parser end
+2025-25-11 06:48:45 DEBUG diff parser start
+2025-25-11 06:48:45 DEBUG line_lengths old: 133; new: 133
+2025-25-11 06:48:45 DEBUG -> code[equal] old[1:132] new[1:132]
+2025-25-11 06:48:45 DEBUG copy old[1:54] new[1:44]
+2025-25-11 06:48:45 DEBUG parse_part from 45 to 55 (to 55 in part parser)
+2025-25-11 06:48:45 DEBUG parse_part from 56 to 133 (to 132 in part parser)
+2025-25-11 06:48:45 DEBUG -> code[replace] old[133:133] new[133:133]
+2025-25-11 06:48:45 DEBUG diff parser end
+2025-25-11 06:48:53 DEBUG diff parser start
+2025-25-11 06:48:53 DEBUG line_lengths old: 133; new: 133
+2025-25-11 06:48:53 DEBUG -> code[equal] old[1:132] new[1:132]
+2025-25-11 06:48:53 DEBUG copy old[1:54] new[1:44]
+2025-25-11 06:48:53 DEBUG parse_part from 45 to 55 (to 55 in part parser)
+2025-25-11 06:48:54 DEBUG parse_part from 56 to 133 (to 132 in part parser)
+2025-25-11 06:48:54 DEBUG -> code[replace] old[133:133] new[133:133]
+2025-25-11 06:48:54 DEBUG diff parser end
+2025-25-11 06:49:33 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:49:33 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:49:39 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:49:43 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:50:17 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:50:17 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:50:20 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:50:23 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:50:37 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:50:40 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:54:44 INFO User_ID (3) : Successfull log in.
+2025-25-11 06:54:45 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:54:51 INFO User_ID (3) : Successful database saving.
+2025-25-11 06:55:04 INFO User_ID (3) : Successful database saving.

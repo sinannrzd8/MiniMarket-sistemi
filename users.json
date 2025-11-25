@@ -1,0 +1,22 @@
+{
+    "0": {
+        "username": "Yusif",
+        "password": "2008ysfs2008",
+        "balance": 34
+    },
+    "1": {
+        "username": "Siccin",
+        "password": "1234",
+        "balance": 34
+    },
+    "2": {
+        "username": "Nicat",
+        "password": "2008",
+        "balance": 34
+    },
+    "3": {
+        "username": "",
+        "password": "",
+        "balance": 457
+    }
+}
