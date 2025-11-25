@@ -308,36 +308,36 @@ while True:
 
             elif setting_select == "1":
                 change_key = False
-                inputed_password = input("Şifrənizi qeyd edin:")
+                inputed_password = input("Şifrənizi qeyd edin: ")
                 if inputed_password == correct_password:
                     change_key = True
                 else:
-                    inputed_password = input("Şifrə yanlışdır, yenidən cəhd edin:")
+                    inputed_password = input("Şifrə yanlışdır, yenidən cəhd edin: ")
                     if inputed_password == correct_password:
                         change_key = True
                 if change_key == True:
-                    new = input("Yeni istifadəçi adını daxil edin:")
+                    new = input("Yeni istifadəçi adını daxil edin: ")
                     input_username = new
-                    print("İstifadəçi adı uğurla dəyişdirildi. Yeni istifadəçi adınız:",input_username)
+                    print("İstifadəçi adı uğurla dəyişdirildi. Yeni istifadəçi adınız: ",input_username)
                 else:
                     print("Əməliyyat baş tutmadı.")   
             elif setting_select == "2":
                 change_key = False
-                inputed_password = input("Şifrənizi qeyd edin:")
+                inputed_password = input("Şifrənizi qeyd edin: ")
                 if inputed_password == correct_password:
                     change_key = True
                 else:
-                    inputed_password = input("Şifrə yanlışdır, yenidən cəhd edin:")
+                    inputed_password = input("Şifrə yanlışdır, yenidən cəhd edin: ")
                     if inputed_password == correct_password:
                         change_key = True
                     else:
-                        print("Əməliyyat ləğv edildi.")
+                        print("Əməliyyat ləğv edildi...")
                 if change_key == True:
-                    new = input("Yeni şifrəni daxil edin:")
+                    new = input("Yeni şifrəni daxil edin: ")
                     if len(new) < 12 or new.isdigit() == True:
                         print("Tətbiqimizin yeni siyasətinə əsasən sadəcə rəqəmlərdən ibarət və ya 12 simvoldan qısa şifrələr keçərsizdir.")
                     else:
-                        new2 = input("Yeni şifrəni təkrar daxil edin:")
+                        new2 = input("Yeni şifrəni təkrar daxil edin: ")
                         if new == new2:
                             print("Şifrəniz uğurla dəyişdirildi.")
                             correct_password = new
@@ -347,7 +347,7 @@ while True:
         while mainselection == 6:
             header(1.2,"\t Sizin balansınız:{} AZN".format(user_balance))
             print("Balansı artırmaq üçün: +\nGeri dönmək üçün:0")
-            slct = input("Əməliyyatı daxil edin:")
+            slct = input("Əməliyyatı daxil edin: ")
             time.sleep(0.5)
             if slct not in ["+","0"]:
                 print("Yanlış seçim.")
@@ -355,7 +355,7 @@ while True:
                 mainselection = None
             else:
                 try:
-                    amount = int(input("Artırılacaq məbləği qeyd edin:"))
+                    amount = int(input("Artırılacaq məbləği qeyd edin: "))
                     if amount < 0:
                         print("Yanlış seçim.")
                     else:

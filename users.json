@@ -2,21 +2,21 @@
     "0": {
         "username": "Yusif",
         "password": "2008ysfs2008",
-        "balance": 34
+        "balance": 1001
     },
     "1": {
-        "username": "Siccin",
-        "password": "1234",
-        "balance": 34
+        "username": "sinan",
+        "password": "sinan2008diris8",
+        "balance": 1000
     },
     "2": {
         "username": "Nicat",
         "password": "2008",
-        "balance": 34
+        "balance": 1000
     },
     "3": {
         "username": "",
         "password": "",
-        "balance": 457
+        "balance": 45
     }
 }

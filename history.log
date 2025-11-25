@@ -111,3 +111,19 @@
 2025-25-11 10:20:01 INFO User_ID (1) : Successful database saving.
 2025-25-11 10:20:18 INFO Failed checkout.
 2025-25-11 10:20:42 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:45:55 INFO User_ID (1) : Successfull log in.
+2025-25-11 10:45:56 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:46:06 INFO User_ID (NONE) : Wrong log in informations. Failed log in.
+2025-25-11 10:46:07 INFO User_ID (NONE) : Wrong log in informations. Failed log in.
+2025-25-11 10:46:09 INFO User_ID (NONE) : Wrong log in informations. Failed log in.
+2025-25-11 10:46:09 INFO User_ID (NONE) : Cooldown - 10 second
+2025-25-11 10:46:26 INFO User_ID (1) : Successfull log in.
+2025-25-11 10:46:27 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:47:58 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:48:08 INFO User_ID (NONE) : Wrong log in informations. Failed log in.
+2025-25-11 10:48:27 INFO User_ID (1) : Successfull log in.
+2025-25-11 10:48:29 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:49:07 INFO User_ID (1) : Password changed.
+2025-25-11 10:49:12 INFO User_ID (1) : Successful database saving.
+2025-25-11 10:49:23 INFO User_ID (1) : Successfull log in.
+2025-25-11 10:49:24 INFO User_ID (1) : Successful database saving.
